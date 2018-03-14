@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int num, n, check, count1=0, count0=0;
+	cout<<"Enter the no"<<endl;
+	cin>>num;
+    n=1;
+	do{
+	    
+	    if(num&n)
+	    {
+	        count1++;
+	    }
+	  else
+	  {
+	      count0++;
+	  }
+	    n=n<<1;
+	 
+     }while(n<=num);
+     cout<<"Number of ones"<<count1<<endl;
+     cout<<"Number of zeros"<<count0<<endl;
+     return 0;
